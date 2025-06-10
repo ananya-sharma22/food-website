@@ -1,0 +1,59 @@
+<!-- Login Section -->
+<section class="login-section" id="login">
+    <h2 class="section-title">Login</h2>
+    <div class="login-container">
+       <h2>Cafe Login</h2>
+      <form action="login.php" method="POST">
+        <input type="text" name="username" class="input-field" placeholder="Username" required style="width:100%"><br>
+        <input type="passkey" name="passkey" class="input-field" placeholder="Passkey" required><br>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  /* Login section styling */
+.login-section {
+  padding: 50px 0 100px;
+  background: url("background2.jpg") no-repeat;
+  background-size: 100%;
+}
+
+.login-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.input-field:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.login-btn:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
